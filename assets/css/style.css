@@ -3323,8 +3323,9 @@
  }
  
  .domain-search-area p {
+     line-height: 1.6;
      color: #A5A7C5;
-     font-size: 14px
+     font-size: 16px
  }
  
  @media only screen and (min-width: 768px) and (max-width: 991px) {
