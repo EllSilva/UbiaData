@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UbiaData | Sobre Nós, FAQ e Contacto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        /* GERAL */
+        
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+        
+        h1,
+        h2 {
+            text-align: center;
+            color: #0b3c5d;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        strong {
+            color: #0b3c5d;
+        }
+        /* INTRO FAQ */
+        
+        .faq-intro {
+            background: linear-gradient(135deg, #0b3c5d, #328cc1);
+            color: #fff;
+        }
+        
+        .faq-intro h2,
+        .faq-intro p {
+            color: #fff;
+        }
+        
+        .faq-intro a {
+            color: #ffe066;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        /* FAQ */
+        
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-item input {
+            display: none;
+        }
+        
+        .faq-item label {
+            display: block;
+            padding: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .faq-item label::after {
+            content: "+";
+            position: absolute;
+            right: 20px;
+            font-size: 18px;
+        }
+        
+        .faq-item input:checked+label::after {
+            content: "-";
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        
+        .faq-item input:checked~.faq-content {
+            max-height: 200px;
+        }
+        
+        .faq-content p {
+            padding: 0 15px 15px;
+            font-size: 14px;
+        }
+        /* CONTACTO */
+        
+        .contact {
+            background: linear-gradient(135deg, #0b3c5d, #328cc1);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .contact h2,
+        .contact p {
+            color: #fff;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+        }
+        
+        .contact-card span {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 8px;
+        }
+        /* RESPONSIVO */
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SOBRE NÓS -->
+    <section>
+        <h1>Sobre Nós</h1>
+        <p>
+            Na <strong>UbiaData</strong>, acreditamos que os dados só geram valor quando se transformam em informação clara, prática e estratégica.
+        </p>
+        <p>
+            Atuamos em <strong>análise de dados, dashboards e automação de relatórios</strong>, ajudando empresas a organizar, analisar e visualizar informações de forma eficiente.
+        </p>
+        <p>
+            Combinamos tecnologia, metodologia e conhecimento analítico para apoiar decisões rápidas, seguras e baseadas em dados. O sucesso dos nossos clientes é a nossa maior prioridade.
+        </p>
+    </section>
+
+    <!-- INTRO FAQ -->
+    <section class="faq-intro">
+        <h2>Perguntas Frequentes</h2>
+        <p>
+            Aqui respondemos às dúvidas mais comuns sobre como a <strong>UbiaData</strong> pode ajudar a sua empresa com dashboards, automação de relatórios, KPIs e treinamentos. Caso não encontre sua resposta, <a href="mailto:info@ubiadata.com">fale connosco</a>.
+        </p>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="faq-item">
+            <input type="checkbox" id="faq1">
+            <label for="faq1">O que é a UbiaData?</label>
+            <div class="faq-content">
+                <p>
+                    Somos uma empresa especializada em análise de dados e business intelligence, focada em apoiar decisões estratégicas.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2">
+            <label for="faq2">Quais serviços vocês oferecem?</label>
+            <div class="faq-content">
+                <p>
+                    Dashboards em Power BI e Excel, automação de relatórios, consultoria em KPIs e treinamentos práticos.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq3">
+            <label for="faq3">Os dashboards são personalizados?</label>
+            <div class="faq-content">
+                <p>
+                    Sim. Todos os projetos são desenvolvidos conforme as necessidades de cada cliente.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq4">
+            <label for="faq4">A UbiaData oferece treinamento?</label>
+            <div class="faq-content">
+                <p>
+                    Sim. Treinamentos em Excel Avançado, Power BI e análise de dados.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq5">
+            <label for="faq5">Como solicitar um orçamento?</label>
+            <div class="faq-content">
+                <p>
+                    Entre em contacto connosco através do site, e-mail ou telefone.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact">
+        <h2>Contacto</h2>
+        <p>
+            Precisa de apoio em análise de dados ou quer iniciar um projeto connosco? Estamos prontos para ajudar.
+        </p>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <span>📞</span>
+                <h3>Telefone</h3>
+                <p>+244 XXX XXX XXX</p>
+            </div>
+
+            <div class="contact-card">
+                <span>📧</span>
+                <h3>Email</h3>
+                <p>info@ubiadata.com</p>
+            </div>
+
+            <div class="contact-card">
+                <span>🌐</span>
+                <h3>Website</h3>
+                <p>www.ubiadata.com</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
