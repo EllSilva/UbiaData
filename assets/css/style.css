@@ -399,7 +399,7 @@
  .btn {
      font-family: "Poppins", sans-serif;
      text-transform: capitalize;
-     padding: 27px 44px !important;
+     padding: 17px 24px !important;
      color: #fff;
      cursor: pointer;
      font-size: 15px;
@@ -416,7 +416,7 @@
      border: 0;
      overflow: hidden;
      margin: 0;
-     border-radius: 30px !important;
+    
      display: inline-block !important
  }
  
@@ -447,7 +447,8 @@
  
  .btn:hover {
      color: #fff !important;
-     text-decoration: none !important
+     text-decoration: none !important;
+     background-color: #0078ff;
  }
  
  .btn:hover::before {
@@ -3237,13 +3238,24 @@
  .principal-bg {
      background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .55)), url("../img/hero/principal.jpg") center/cover;
  }
+ /* animação zoom */
+ /* animação */
+ 
+ @keyframes zoomIn {
+     0% {
+         background-size: 140%;
+     }
+     100% {
+         background-size: 100%;
+     }
+ }
  
  .servicos-bg {
      background: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, .15)), url("../img/hero/servicos.jpg") center/cover;
  }
  
  .sobre-bg {
-     background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url("../img/hero/sobre.jpg") center/cover;
+     background: linear-gradient(rgba(0, 0, 0, .85), rgba(255, 102, 0, 0.363)), url("../img/hero/sobre.jpg") center/cover;
  }
  
  .contacto-bg {

@@ -1,4 +1,28 @@
-/* CSS INLINE content-section */
+/* CSS INLINE ontent-section h5 */
+ 
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* posição inicial */
+    transform: scale(1.3) translateY(40px);
+    /* animação */
+    animation: zoomUp 3s ease forwards;
+}
+
+
+/* animação zoom up */
+
+@keyframes zoomUp {
+    0% {
+        transform: scale(1.3) translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
 
 .footer {
     color: #fff;
@@ -90,7 +114,7 @@
 }
 
 .content-section h2 {
-    font-size: 3.9rem;
+     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
     color: #ffffff;
@@ -99,14 +123,14 @@
 .content-section h5 {
     color: var(--cor-texto-claro);
     font-weight: bold;
-    margin-top: 2.1rem;
+    margin-top: 1.2rem;
     margin-bottom: 0.5rem;
-    font-size: 2.25rem;
+    font-size: 1.4rem;
 }
 
 .content-section p {
     color: var(--cor-texto-principal);
-    font-size: 1.6rem;
+   
     line-height: 1.6;
 }
 
@@ -295,7 +319,7 @@
         flex-direction: column-reverse;
     }
     .content-section h2 {
-        font-size: 2.9rem;
+        font-size: 2.5rem;
     }
     .services-grid {
         grid-template-columns: 1fr;

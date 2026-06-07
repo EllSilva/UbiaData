@@ -1,0 +1,453 @@
+ body {
+     font-family: 'Montserrat', sans-serif;
+     color: #333;
+   
+ }
+
+ /* Topbar Info h5 */
+ .top-bar {
+     background-color: #FF591C;;
+     color: #fff;
+     font-size: 0.8rem;
+     padding: 8px 0;
+ }
+
+ .top-bar a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ /* Navbar Base */
+ .navbar {
+     padding: 15px 0; 
+ }
+
+ .navbar-nav .nav-link {
+     color: #333 !important;
+     font-weight: 600;
+     font-size: 0.85rem;
+     text-transform: uppercase;
+     margin-right: 15px;
+     padding: 10px 0;
+ }
+
+ .btn-abra-empresa {
+     background-color: #2c3e50;
+     color: #fff !important;
+     border-radius: 4px;
+     padding: 8px 20px !important;
+     font-size: 0.85rem;
+     text-transform: uppercase;
+     font-weight: 600;
+     display: inline-block;
+ }
+
+ /* Responsividade Avançada para o Menu Mobile controlado pelo Vue */
+ @media (max-width: 991.98px) {
+     .navbar-collapse {
+         background-color: #ffffff;
+         padding: 15px;
+         border-top: 1px solid #eee;
+         margin-top: 10px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+     }
+
+     .navbar-nav .nav-link {
+         margin-right: 0;
+         border-bottom: 1px solid #f8f9fa;
+     }
+
+     .navbar-nav li:last-child .nav-link {
+         border-bottom: none;
+     }
+
+     .btn-abra-empresa {
+         display: block;
+         margin-top: 10px;
+     }
+ }
+
+ /* Hero Section */
+ .hero-section {
+     background: linear-gradient(to right, #1c2833 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0.2) 55%, transparent 100%),
+         url('../img/hero/principal3.jpg') no-repeat center center/cover;
+     padding: 100px 0 160px 0;
+ }
+
+ .hero-title {
+     font-weight: 700;
+     color: #292929;
+     font-size: 2.5rem;
+ }
+
+ .hero-text {
+     color: #000000;
+     max-width: 600px;
+     margin: 20px 0;
+ }
+
+ .btn-saiba-mais { 
+     color: #fff;
+     padding: 10px 25px;
+     font-weight: 600;
+     border-radius: 4px;
+     text-transform: uppercase;
+     font-size: 0.85rem;
+ 
+    background: #393377;
+    background: -moz-linear-gradient(top, #393377 0%, #eb6823 100%);
+    background: -webkit-linear-gradient(top, #393377 0%, #f95f0d 100%);
+    background: linear-gradient(to bottom, #393377 0%, #eb6823 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#393377', endColorstr='#eb6823', GradientType=0);
+ 
+ }
+
+.btn-saiba-mais:hover { 
+  color: #fff;
+       background: -moz-linear-gradient(top, #eb6823 0%, #393377 100%);
+    background: -webkit-linear-gradient(top, #eb6823 0%, #393377 100%);
+    background: linear-gradient(to bottom, #eb6823 0%, #393377 100%);
+
+   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#393377', endColorstr='#eb6823', GradientType=0);
+ 
+   transform: scale(1.1);
+ }
+
+
+
+ /* Cards de Pilares (Sobrepostos) */
+ .pillars-container {
+     margin-top: -100px;
+     position: relative;
+     z-index: 10;
+ }
+
+ .card-pilar {
+     background-color: #1c2630;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     padding: 40px 30px;
+     text-align: center;
+     height: 100%;
+ }
+
+ .card-pilar i {
+     font-size: 2rem;
+     margin-bottom: 20px;
+     display: block;
+ }
+
+ .card-pilar h4 {
+     font-size: 1.1rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 15px;
+ }
+
+ .card-pilar p {
+     font-size: 0.85rem;
+     color: #b0b9c1;
+     line-height: 1.6;
+ }
+
+ /* Seção Serviços */
+ .services-section {
+     padding: 80px 0;
+ }
+
+ .section-title {
+     text-align: center;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-bottom: 5px;
+ }
+
+ .section-subtitle {
+     text-align: center;
+     color: #777;
+     font-size: 0.95rem;
+     margin-bottom: 60px;
+ }
+
+ .service-box {
+     margin-bottom: 40px;
+ }
+
+ .service-icon {
+     font-size: 2rem;
+     color: #555;
+     float: left;
+     margin-right: 15px;
+ }
+
+ .service-content {
+     overflow: hidden;
+ }
+
+ .service-content h5 {
+     font-weight: 700;
+     font-size: 1.2rem;
+     margin-bottom: 8px;
+ }
+
+ .service-content p {
+     font-size: 0.95rem;
+     color: #666;
+     line-height: 1.6;
+     margin-bottom: 5px;
+ }
+
+ .service-link {
+     font-size: 0.8rem;
+     color: #888;
+     text-decoration: none;
+     font-weight: 600;
+ }
+
+ /* Seção Contato */
+ .contact-section {
+     background: linear-gradient(rgba(28, 38, 48, 0.95), rgba(28, 38, 48, 0.95)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+     color: #fff;
+     padding: 80px 0;
+ }
+
+ .contact-section input,
+ .contact-section textarea {
+     background-color: transparent;
+     border: none;
+     border-bottom: 1px solid #4f5e6d;
+     border-radius: 0;
+     color: #fff;
+     padding-left: 0;
+     margin-bottom: 25px;
+ }
+
+ .contact-section input:focus,
+ .contact-section textarea:focus {
+     background-color: transparent;
+     color: #fff;
+     border-color: #fff;
+     box-shadow: none;
+ }
+
+ .contact-section input::placeholder,
+ .contact-section textarea::placeholder {
+     color: #8a99a6;
+     font-size: 0.9rem;
+ }
+
+ .btn-enviar {
+     background-color: #fff;
+     color: #1c2630;
+     font-weight: 700;
+     text-transform: uppercase;
+     padding: 10px 35px;
+     border-radius: 20px;
+     font-size: 0.85rem;
+     border: none;
+ }
+
+ .contact-info-box h2 {
+     font-weight: 700;
+     font-size: 2.2rem;
+     margin-bottom: 15px;
+ }
+
+ .contact-info-box p {
+     color: #a4b3c1;
+     font-size: 0.95rem;
+     line-height: 1.6;
+ }
+
+ .phone-number {
+     font-size: 2rem;
+     font-weight: 700;
+     margin-top: 30px;
+     display: block;
+     color: #fff;
+ }
+
+ /* Rodapé */
+ .footer-section {
+     background-color: #e4e1db;
+     color: #555;
+     font-size: 0.75rem;
+     padding: 40px 0;
+ }
+
+ .footer-logo {
+     font-weight: 800;
+     font-size: 1.8rem;
+     color: #1c2630;
+     line-height: 1;
+ }
+
+ .footer-logo span {
+     font-size: 0.6rem;
+     display: block;
+     letter-spacing: 2px;
+     font-weight: 400;
+ }
+
+ .navbar { 
+    padding: 15px 0; 
+    background-color: #fff8f6;
+    transition: all 0.4s ease-in-out; /* Faz qualquer mudança de tamanho/estilo ser suave */
+    width: 100%;
+    z-index: 1000; /* Garante que o menu sempre fique por cima dos outros elementos */
+}
+
+.navbar-fixed-animated {
+    position: fixed; /* Fixa o menu na tela, ignorando o scroll */
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Sombra leve para desgrudar o menu do fundo do site */
+    padding: 10px 0; /* Diminui levemente a altura do menu ao fixar (efeito clássico) */
+    animation: slideDown 0.4s ease-in-out forwards; /* Dispara a animação que criamos abaixo */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%); /* Começa totalmente escondido para cima */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição correta, visível no topo */
+    }
+}
+
+
+
+
+
+/* Customização do Novo Rodapé */
+.footer-modern {
+    background-color: #0f161c; /* Azul escuro bem fechado puxado para o exemplo */
+    color: #94a3b8; /* Cinza claro suave para os textos secundários */
+    padding: 80px 0 30px 0;
+    font-size: 0.9rem;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+}
+
+/* Identidade Visual no Rodapé */
+.footer-brand {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.footer-brand span {
+    font-size: 0.6rem;
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.footer-description {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin-top: 15px;
+    max-width: 320px;
+}
+
+/* Títulos das Colunas */
+.footer-heading {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Links das Listas */
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.footer-links li {
+    margin-bottom: 12px;
+}
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+.footer-links a:hover {
+    color: #38bdf8; /* Tom azul de destaque ao passar o mouse */
+}
+
+/* Ícones de Redes Sociais */
+.footer-social-icons {
+    margin-top: 20px;
+}
+.footer-social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #94a3b8;
+    margin-right: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.footer-social-icons a:hover {
+    color: #fff;
+    border-color: #64748b;
+    background-color: #1e293b;
+}
+
+/* Linha Divisória */
+.footer-divider {
+    border-top: 1px solid #1e293b;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Rodapé Inferior */
+.footer-bottom {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.footer-legal-links a {
+    color: #64748b;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: color 0.2s ease;
+}
+.footer-legal-links a:hover {
+    color: #94a3b8;
+}
+
+/* Badges de Certificação estilo botão da imagem */
+.badge-legal {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 10px;
+    border: 1px solid #334155;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.text-laranja{ 
+    color: #f95f0d
+;
+}

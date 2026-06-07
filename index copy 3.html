@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lwei Brokers - Quem Somos</title>
+    <style>
+        /* --- Configurações Globais --- */
+        :root {
+            --primary-color: #a38c5b; /* Tom de dourado/bronze do texto */
+            --text-dark: #333333;
+            --text-light: #555555;
+            --bg-light: #f9f9f9;
+            --bg-white: #ffffff;
+            --border-color: #e0e0e0;
+            --font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* --- Seção de Introdução --- */
+        .intro-text {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            text-align: justify;
+            font-weight: 300;
+            margin-bottom: 60px;
+            letter-spacing: 0.3px;
+        }
+
+        /* --- Seção de Métricas (Cards) --- */
+        .metrics-section {
+            background-color: var(--bg-light);
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .metric-card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .metric-number {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        /* --- Seção Missão --- */
+        .mission-section {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .mission-title {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        .mission-divider {
+            width: 50px;
+            height: 1px;
+            background-color: var(--primary-color);
+            margin: 0 auto 40px auto;
+        }
+
+        .mission-text {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 900px;
+            margin: 0 auto;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        /* --- Responsividade para Telas Menores --- */
+        @media (max-width: 768px) {
+            .intro-text {
+                text-align: left;
+                font-size: 1rem;
+            }
+            .mission-title {
+                font-size: 2rem;
+            }
+            .mission-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <p class="intro-text">
+            A Lwei Mansamusa Brokers – SCVM, S.A. é uma Sociedade Corretora de Valores Mobiliários, criada nos termos do Decreto Legislativo Presidencial nº 5/13, de 09 de Outubro que aprova o Regime Jurídico das Sociedades Corretoras e Distribuidoras de Valores Mobiliários. A nossa actividade centra-se na prestação de serviços de intermediação financeira, gestão não discricionária de carteiras de investimentos, estudos e análises e consultoria de investimentos. A nossa missão é prestar os melhores serviços de intermediação financeira em Angola, mantendo uma presença distinta no mercado de capitais.
+        </p>
+    </main>
+
+    <section class="metrics-section">
+        <div class="metrics-grid">
+            
+            <div class="metric-card">
+                <div class="metric-number">+Kz590MM</div>
+                <div class="metric-label">Intermediados</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-number">+Kz134Mm</div>
+                <div class="metric-label">Ativos Sob Custódia</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-number">+7</div>
+                <div class="metric-label">Anos de Experiência</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-number">+150</div>
+                <div class="metric-label">Clientes Corporativos e Institucionais</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container mission-section">
+        <h2 class="mission-title">Nossa Missão</h2>
+        <div class="mission-divider"></div>
+        <p class="mission-text">
+            Potenciar o mercado de capitais angolano pela democratização do acesso ao mercado de capitais e prestação de serviços de intermediação financeira de referência com vista a alavancar o desenvolvimento diversificado e sustentável da economia nacional.
+        </p>
+    </section>
+
+</body>
+</html>
